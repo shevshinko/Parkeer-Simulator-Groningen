@@ -29,7 +29,7 @@ public class LegendaView extends AbstractView {
         add(Legenda3);
 
 
-        //updateView();
+        updateView();
     }
     public void updateView() {
         int free = Math.round(540) - (Math.round(model.getAmountOfAd_Hoc()) + Math.round(model.getAmountOfPassCars()) + Math.round(model.getAmountOfReservedCars()));
