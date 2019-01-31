@@ -3,7 +3,7 @@ package runner;
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 
-import main.Simulator;
+import model.Simulator;
 
 public class MainRunner {
     public static void main(String[] args) {
