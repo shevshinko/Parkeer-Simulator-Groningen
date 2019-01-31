@@ -3,7 +3,7 @@ package runner;
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 
-import model.Simulator;
+import model.SimulatorModel;
 
 public class MainRunner {
     public static void main(String[] args) {
@@ -17,6 +17,6 @@ public class MainRunner {
         } catch (Exception e) {
             // If Nimbus is not available, you can set the GUI to another look and feel.
         }
-        new Simulator();
+        new SimulatorModel();
     }
 }

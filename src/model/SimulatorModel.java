@@ -4,7 +4,7 @@ import java.util.Random;
 
 import view.SimulatorView;
 
-public class Simulator {
+public class SimulatorModel {
 
 	private static final String AD_HOC = "1";
 	private static final String PASS = "2";
@@ -31,7 +31,7 @@ public class Simulator {
     int paymentSpeed = 7; // number of cars that can pay per minute
     int exitSpeed = 5; // number of cars that can leave per minute
 
-    public Simulator() {
+    public SimulatorModel() {
         entranceCarQueue = new CarQueue();
         entrancePassQueue = new CarQueue();
         paymentCarQueue = new CarQueue();
