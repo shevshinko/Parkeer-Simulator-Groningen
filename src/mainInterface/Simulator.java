@@ -13,7 +13,7 @@ import java.awt.SystemColor;
 import java.awt.BorderLayout;
 import javax.swing.GroupLayout.Alignment;
 
-public class Interface {
+public class Simulator {
     private JFrame screen;
     private SimulatorModel simulator;
     private AbstractView carParkView;
@@ -29,7 +29,7 @@ public class Interface {
     private AbstractView piechartPassOccupation;
     
 
-    public Interface() {
+    public Simulator() {
         simulator = new SimulatorModel(3,6,30);
         controller = new Controller(simulator);
         speed = new Speed(simulator);
