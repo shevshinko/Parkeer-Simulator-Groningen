@@ -1,6 +1,7 @@
-/mainInterface/
-/control/
-/view/
 /.DS_Store
+/control/
+/een.ucls
+/mainInterface/
 /model/
 /runner/
+/view/
