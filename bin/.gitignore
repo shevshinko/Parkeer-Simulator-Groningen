@@ -2,3 +2,5 @@
 /control/
 /view/
 /.DS_Store
+/model/
+/runner/
