@@ -34,7 +34,10 @@ public class LegendaView extends AbstractView {
     updateView();
     }
     public void updateView() {
+<<<<<<< HEAD
     	//	een int met een formule die de vrije plekken berekenen
+=======
+>>>>>>> 20767e455bc8e2b16ada61c4e13f099261367650
         int free = Math.round(500) - (Math.round(model.getAmountOfAd_Hoc()) + Math.round(model.getAmountOfPassCars()) + Math.round(model.getAmountOfReservedCars()));
         Legenda1.setText("<html><h4><b><font color=\"red\">Ad-Hoc: "+model.getAmountOfAd_Hoc()+ "</font><br><font color=\"blue\">Passholder: "+model.getAmountOfPassCars()+"</font><br><font color=\"green\">Gereserveerd: "+model.getAmountOfReservedCars()+"</font><br><font color=\"gray\">Vrije plaatsen: "+free+"</font></b></h4><br><br><br><br></html>");
         Legenda2.setText("<html><h4><b><font color=\"yellow\">Gereserveerd : "+model.getAmountOfReservedSpots()+ "</font><br><font color=\"green\">Gereserveerd<br>aanwezig: "+model.getAmountOfReservedCars()+"</font><br><br><br></b></h4></html>");

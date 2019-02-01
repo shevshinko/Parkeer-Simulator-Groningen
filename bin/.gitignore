@@ -1,6 +1,9 @@
 /.DS_Store
 /control/
+<<<<<<< HEAD
 /een.ucls
+=======
+>>>>>>> 20767e455bc8e2b16ada61c4e13f099261367650
 /mainInterface/
 /model/
 /runner/
