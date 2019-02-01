@@ -35,14 +35,10 @@ public class MoneyView extends AbstractView {
 
         if (model.getPay() == model.getAdHocPay()){
         moneyAdHocPlus = model.getPay();}
-       // double moneyPassPlus = model.getPay();
         if (model.getPay() == model.getReservedPay()){
         moneyReservedPlus = model.getPay();}
 
-
-
         double moneyAdHoc = this.moneyAdHoc + moneyAdHocPlus;
-       // double moneyPass = this.moneyPass + moneyPassPlus;
         double moneyReserved = this.moneyReserved + moneyReservedPlus;
         double moneyTotal = moneyAdHoc + moneyPass + moneyReserved;
 

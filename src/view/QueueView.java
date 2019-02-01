@@ -21,8 +21,6 @@ public  class QueueView extends AbstractView {
     }
 
     public void updateView() {
-     // SimulatorModel model = (SimulatorModel) super.model;
-
         int adHocQueue = model.getCarQueueCount();
         int passQueue = model.getPassQueueCount();
         setTest(adHocQueue, passQueue);

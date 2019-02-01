@@ -27,13 +27,11 @@ public class CarParkView extends AbstractView {
         g.drawImage(carParkImage, 0, 0, null);
     }
         else {
-            // Rescale the previous image.
             g.drawImage(carParkImage, 0, 0, currentSize.width, currentSize.height, null);
         }
     }
 
     public void updateView() {
- //       SimulatorModel model = (SimulatorModel) super.model;
         if (!size.equals(getSize())) {
             size = getSize();
             carParkImage = createImage(size.width, size.height);
