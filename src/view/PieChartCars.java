@@ -19,6 +19,10 @@ public class PieChartCars extends AbstractView{
         int amountOfPassCars = model.getAmountOfPassCars();
         int amountOfReservedCars = model.getAmountOfReservedCars();
 
+//        System.out.println("Check amountOfAd_Hoc = " + amountOfAd_Hoc);
+//        System.out.println("Check amountOfPassCars = " + amountOfPassCars);
+//        System.out.println("Check amountOfReservedCars = " + amountOfReservedCars);
+
         //360 degree circle / 540 parking spots
         float equalizer = 360f / 540f;
         int angleAd_Hoc = Math.round(amountOfAd_Hoc * equalizer);

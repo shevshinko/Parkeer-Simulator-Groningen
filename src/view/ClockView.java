@@ -33,7 +33,7 @@ public class ClockView extends AbstractView {
                     break;
             case 6:     dayString = "Zondag";
                     break;
-            default:    dayString = "Ongeldige dag";
+            default:    dayString = "Invalid day";
                     break;
         }
         String hourString = String.format("%02d", hour);

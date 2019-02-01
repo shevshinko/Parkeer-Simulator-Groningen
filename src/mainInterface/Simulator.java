@@ -2,7 +2,6 @@ package mainInterface;
 
 import control.AbstractController;
 import control.Controller;
-import control.InputValues;
 import control.Speed;
 import model.SimulatorModel;
 import view.*;
