@@ -28,6 +28,7 @@ public class MoneyView extends AbstractView {
     }
 
     @Override
+//	update de view
     public void updateView() {
         super.updateView();
 
