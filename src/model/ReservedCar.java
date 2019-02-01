@@ -10,12 +10,14 @@ public class ReservedCar extends Car {
 
     public ReservedCar() {
         Random random = new Random();
-        int stayMinutes = (int) (15 + random.nextFloat() * 3 * 60);
+        int stayMinutes = random.nextInt(100) + 10;
+        System.out.println("Reserved Car is staying " + stayMinutes + " minutes");
         this.setMinutesLeft(stayMinutes);
         this.setHasToPay(true);
         this.setType(4);
         this.setReservedPay(Math.round(reservedCarCost * stayMinutes + reservationCost));
 
+      
     }
 
     public Color getColor(){
