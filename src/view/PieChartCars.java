@@ -19,23 +19,19 @@ public class PieChartCars extends AbstractView{
         int amountOfPassCars = model.getAmountOfPassCars();
         int amountOfReservedCars = model.getAmountOfReservedCars();
 
-//        System.out.println("Check amountOfAd_Hoc = " + amountOfAd_Hoc);
-//        System.out.println("Check amountOfPassCars = " + amountOfPassCars);
-//        System.out.println("Check amountOfReservedCars = " + amountOfReservedCars);
-
-        //360 degree circle / 540 parking spots
+        //360 degree circle / 540 parkeerplekken
         float equalizer = 360f / 540f;
         int angleAd_Hoc = Math.round(amountOfAd_Hoc * equalizer);
         int anglePassCars = Math.round(amountOfPassCars * equalizer);
         int angleReservedCars = Math.round(amountOfReservedCars);
         
-        //Ad_Hoc slice
+        //Ad_Hoc stukje
         g.setColor(Color.RED);
         g.fillArc(10, 10, 180, 180, 0, angleAd_Hoc);
-        //PassCars slice
+        //PassCars stukje
         g.setColor(Color.BLUE);
         g.fillArc(10, 10, 180, 180, angleAd_Hoc, anglePassCars);
-        //ReservedCars slice
+        //ReservedCars stukje
         g.setColor(Color.GREEN);
         g.fillArc(10, 10, 180, 180, anglePassCars + angleAd_Hoc, angleReservedCars);
         g.setColor(Color.LIGHT_GRAY);

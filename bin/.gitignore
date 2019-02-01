@@ -1,5 +1,6 @@
-/mainInterface/
-/runner/
+/.DS_Store
 /control/
+/mainInterface/
 /model/
+/runner/
 /view/
