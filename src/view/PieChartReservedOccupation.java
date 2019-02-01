@@ -12,19 +12,16 @@ public class PieChartReservedOccupation extends AbstractView {
     }
 
     public void paintComponent(Graphics g) {
-        g.setColor(Color.WHITE);
+        g.setColor(Color.GRAY);
         g.fillRect(0, 0, 200, 200);
 
 
         float amountOfReservedSpots = model.getAmountOfReservedSpots();
         float amountOfReservedCars = model.getAmountOfReservedCars();
 
-        System.out.println("Check amountOfReservedSpots = " + amountOfReservedSpots);
 
+        ////hier doen we NIET 500, want het gaat hier niet om alle plaatsen, maar de plaatsen voor de gereserveerde
         int factor = Math.round(360f / (amountOfReservedSpots + amountOfReservedCars));
-
-     
-
         int angleReservedCars = Math.round(factor * amountOfReservedCars);
 
 
