@@ -13,7 +13,7 @@ public class PieChartCars extends AbstractView{
 
     	//paintcomponent is een methode van Java. setcolor maakt de kleur aan van het blokje, fillrect is de grootte van het blokje.
     public void paintComponent(Graphics g) {
-    	g.setColor(Color.WHITE);
+    	g.setColor(new Color(244,244,244,1));
         g.fillRect(0, 0, 200, 200);
 
         //hier definiteren we de hoevheelheid, dat word uit simulator model gehaald.
