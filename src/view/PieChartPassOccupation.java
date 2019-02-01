@@ -12,7 +12,7 @@ public class PieChartPassOccupation extends AbstractView {
     }
 
     public void paintComponent(Graphics g) {
-        g.setColor(Color.WHITE);
+        g.setColor(Color.GRAY);
         g.fillRect(0, 0, 200, 200);
 
 
