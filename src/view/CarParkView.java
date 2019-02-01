@@ -31,6 +31,7 @@ public class CarParkView extends AbstractView {
         }
     }
 
+// Update de view
     public void updateView() {
         if (!size.equals(getSize())) {
             size = getSize();
